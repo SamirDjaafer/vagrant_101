@@ -45,7 +45,7 @@ The default package manager for Ubuntu is apt-get.
 
 ### What goes on the vagrant file?
 
-1. config.vm.box | This is our Operating System! We will be using ubuntu 64 bit
+1. config.vm.box | This is our Operating System! We will be using ubuntu/xenial64 bit
 2. config.vm.provider | This is VirtualBox
 3. config.vm.network | How your host computer sees your box
 4. config.vm.synced_folder | How you access files from your computer
@@ -59,3 +59,5 @@ If we dont use provisions, Vagrant will just run a blank ubuntu server
 3. vagrant suspends | Saves the virtual machine and suspend it / make it offline
 4. vagrant resume | Resumes the virtual machine
 5. vagrant destroy | Destroys the virtual machine
+6. vagrant ssh | Makes us go inside of our virtual box. We can run | sudo apt-get update, 
+sudo apt-get install nginx
